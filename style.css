@@ -19,6 +19,7 @@ body{
 .main-content{
     flex: 1;
     border-radius: 1rem;
+    padding: 0 1rem;
     overflow: auto;
     background-color: #121212;
 }
@@ -48,14 +49,14 @@ a{
 .nav-option a{
     opacity: 0.7;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-left: 1.3rem;
 }
 .nav-option a:hover{
     opacity: 1;
 }
 .nav-option i{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
  .sidebar .library{
      height: 100%;
@@ -63,13 +64,14 @@ a{
     }
 .library .options{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
 }
 .library img {
     height: 1.2rem;
     width: 1.2rem;
-    margin-left: 0.5rem;
+margin-left: 0.5rem;
 }
 .options .library-option a{
     margin-left: 0.5rem;
@@ -111,7 +113,7 @@ a{
     opacity: 0.8;
     font-weight: 300;
 }
-.main-content .sticky-nav{
+.sticky-nav{
     position: sticky;
     top: 0;
     background-color: #121212;
@@ -119,8 +121,66 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0 1rem 0;   
+    z-index: 6;
+}
+.sticky-nav-icon{
+    margin-left: 0.9rem;
 }
 .sticky-nav-icon img{
-    height: 1rem;
-    width: 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav-options button{
+    margin-right: 1rem;
+}
+.sticky-nav-options .user-icon{
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+}
+@media (max-width : 1000px){
+    .hide{
+        display: none;
+    }
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 150px;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.song-tittle{
+    font-weight: 700;
+}
+.song-info{
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+
+
+.footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 30%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: 0.4;
 }
