@@ -11,7 +11,8 @@ body{
     
 }
 .sidebar{
-    width: 335px;
+    width: 320px;
+    margin-right: 0.5rem;
     border-radius: 1rem;
     background-color: #000;
 }
@@ -29,7 +30,7 @@ body{
     height: 70px;
 }
 .nav{
-    margin: 0.6rem;
+    margin: 0.75rem 0 0.6rem 0.3rem;
     display: flex;
     flex-direction: column;
     background-color: #121212;
@@ -62,10 +63,64 @@ a{
     }
 .library .options{
     display: flex;
-    
+    justify-content: space-between;
     padding: 0.5rem 1rem;
 }
 .library img {
     height: 1.2rem;
     width: 1.2rem;
+    margin-left: 0.5rem;
+}
+.options .library-option a{
+    margin-left: 0.5rem;
+}
+.options .icon{
+    font-size: 1.35rem;
+}
+.options .icon i{
+    opacity: 0.7;
+    margin-right: 0.75rem;
+}
+.options .icon i:hover{
+    opacity: 1;
+}
+.lib-box .box{
+    margin: 0.75rem 0.3rem 1.4rem 0.3rem;
+    /* width: 100%; */
+    border-radius: 0.75rem;
+    padding: 0.6rem 1rem;
+    height: 8rem;
+    background-color: #232323;
+}
+.badges{
+    height: 2rem;
+    border-radius: 5rem;
+    padding: 0.25rem 1rem;
+    border: none;
+    font-weight: 700;
+    width: fit-content;
+    margin-top: 0.5rem;
+    background-color: white;
+}
+.box .p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box .p2{
+    font-size: 0.76rem;
+    opacity: 0.8;
+    font-weight: 300;
+}
+.main-content .sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;   
+}
+.sticky-nav-icon img{
+    height: 1rem;
+    width: 1rem;
 }
